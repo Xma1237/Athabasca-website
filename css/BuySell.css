@@ -1,0 +1,102 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+CCS file for BuySell.html & BuySell2.html
+*/
+
+.content {
+    float: left;
+    width: 80%;
+}
+
+/* this will overwrite h1 style from All_common.css */
+.content h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content table {
+    border: 2px;
+    /* combine the borders to one line */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* to have all borders. work with above 'collapse' */
+table, th, td {
+    border: 2px solid;
+    padding: 10px 10px;
+}
+
+/* margin to the right */
+.content table td {
+    margin-right: 20px;
+}
+
+/* parent tag of 'shade' and 'zoom' need relative postion attribute */
+.list {
+    position: relative;
+}
+
+/* limit size of small img */
+.listImg img {
+    width: 200px;
+    height: 266px;
+}
+
+/* css for the shade on top of small img */
+.shade {
+    /* make the whole div absolute postion */
+    position: absolute;
+    /* stay to the top of small img which is parent div */
+    top: 0;
+    left: 0;
+    /* smaller box size */
+    width: 100px;
+    height: 133px;
+    background-color: skyblue;
+    /* show up on top */
+    z-index: 1;
+    /* change opacity so it does not cover div below */
+    opacity: 0.4;
+
+    /* hide the block, when mouse is on, change display */
+    display: none;
+}
+
+/* css for the zoomed big img */
+.zoom {
+    /* make the whole div absolute postion */
+    position: absolute;
+    /* stay to the right of parent div */
+    top: 0;
+    left: 250px;
+    /* bigger box */
+    width: 500px;
+    height: 665px;
+    background-color: pink;
+    /* show up on top */
+    z-index: 11;
+    /* hide extra size */
+    overflow: hidden;
+
+    /* hide the block, when mouse is on, change display */
+    display: none;
+}
+
+/* limist the wide of zoomed img */
+.zoom img {
+    /* zoomImg need postion attributes so it can be changed */
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1000px;
+    height: 1330px;
+}
+
+/* clear float effects and take space at bottom */
+.space {
+    clear: both;
+    position: relative;
+    height: 600px;
+}

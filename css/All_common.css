@@ -1,0 +1,119 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-23 
+This CSS is the common page style for all pages
+*/
+
+/* This is nevigation bar, fix to the right side of screen */
+/* This is same over all pages */
+/* navButton is the button to call nav out */
+.navButton {
+    /* position is fixed on top right corner */
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 15%;
+    background-color: #a46345;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    /* font style */
+    text-align: center;
+    line-height: 50px;
+    font-weight: 800;
+    color: black;
+    /* z-index is bigger than calendar */
+    z-index: 2;
+}
+
+.nav {
+    /* alsway stays top right corner */
+    position: fixed;
+    right: 0px;
+    top: 100px;
+    /* height: 300px; */
+    width: 15%;
+    background-color: #a46345;
+    /* round corner */
+    border-radius: 10px 10px 10px 10px;
+    /* hide when default */
+    display: none;
+    /* z-index is bigger than calendar */
+    z-index: 2;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    font-weight: 800;
+    /* let text stay in center of div */
+    /* line-height 100 will let text center */
+    text-align: center;
+    text-size-adjust: auto;
+    line-height: 100px;
+}
+
+.nav li {
+    /* remove dot in navigation*/
+    list-style-type: none;
+    height: 100px;
+    /* round corner */
+    border-radius: 10px 10px 10px 10px;
+
+    /* this is used to fix phone viewing issues */
+    overflow: hidden;
+}
+
+.nav li:hover {
+    /* change color to blue when mouse on it */
+    background-color: #bf9672;
+}
+
+/* This will change all h1 color to a red color */
+h1 {
+    color: rgb(240, 49, 49);
+}
+
+
+/* code below are for mode switching fucntion */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* css for lightmode */
+.light-mode {
+    color: #333;
+    background-color: rgb(205, 211, 216);
+}
+/* css for darkmode */
+.dark-mode {
+    background-color: #3e3e3e;
+    color: #fff;
+}
+
+/* css for modeSwitch button */
+#modeSwitch {
+    /* position is fixed on top right corner */
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15%;
+    background-color: #a46345;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    /* font style */
+    text-align: center;
+    line-height: 50px;
+    font-weight: 800;
+    cursor: pointer;
+    /* z-index is bigger than calendar */
+    z-index: 2;
+}
+
+/* change button color when mouse over button */
+#modeSwitch:hover {
+    background-color: crimson;
+}
+.navButton:hover {
+    background-color: crimson;
+}

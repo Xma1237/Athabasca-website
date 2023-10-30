@@ -1,0 +1,27 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+CCS file for Travel_Beijing.html & Travel_Shanghai.html & Travel_Japan.html
+*/
+
+.midContent {
+    /* mid part only take 80% of screen in width */
+    width: 80%;
+    /* make margin left 10% will centralize mid content  */
+    margin-left: 10%;
+}
+
+.midContent img {
+    /* make image fit parent div width */
+    width: 100%;
+}
+
+.midContent h1 {
+    /* put title in center */
+    text-align: center;
+}
+
+.midContent p {
+    /* change line height to make paragraph look better */
+    line-height: 50px;
+}

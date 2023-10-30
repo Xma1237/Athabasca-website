@@ -1,0 +1,127 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-23
+CCS file for Index.html
+*/
+
+/* left part of homepage */
+.left {
+  width: 20%;
+  height: 100%;
+  /* left side stays same position */
+  position: fixed;
+  background-color: rgb(56, 55, 55);
+}
+
+.left .leftPicImg {
+  /* image has same width with parent div */
+  width: 100%;
+  /* round corner */
+  border-radius: 10%;
+}
+
+/* The items below left image */
+.left li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  font-size: 90%;
+}
+
+/* pick the first li in ul */
+.left li:first-child {
+  /* make my name bold */
+  font-weight: 1000;
+}
+
+.left .myins {
+  /* smaller image of my ins bar code */
+  width: 40%;
+  border-radius: 5%;
+}
+
+/* middle part of homepage */
+.midContent {
+  /* align at top to the image on leftside */
+  position: relative;
+  left: 20%;
+  vertical-align: top;
+  /* change the display to have a inline block property */
+  display: inline-block;
+  width: 51%;
+  font-size: 20px;
+  /* have some space to the left */
+  margin-left: 5%;
+}
+
+.midContent h1 {
+  text-align: center;
+  /* have some spaces up and down */
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.midContent li {
+  /* I used list here for paragraphs */
+  /* separate each paragraph */
+  margin-bottom: 20px;
+}
+
+
+
+/* carousel */
+/* Set the position and size of the carousel container */
+.image-carousel {
+  position: relative;
+  width: 100%;
+  /* height: 400px; */
+  height: 40%;
+  overflow: hidden;
+}
+
+/* set the position and size of the images in carousel */
+.image-carousel img {
+  position: absolute;
+  width: 100%;
+  /* height: 400px; */
+  height: 100%;
+  object-fit: cover;
+  /* images are initially hidden */
+  opacity: 0;
+}
+
+/* make active image visible */
+.image-carousel img.active {
+  opacity: 1;
+}
+
+/* for the prev and next buttons */
+.prev,
+.next {
+  position: absolute;
+  /* position the buttons */
+  top: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black background */
+  /* white color */
+  color: #fff;
+  /* remove default border */
+  border: none;
+  /* add paddings */
+  /* padding: 10px 20px; */
+  padding: 3% 6%;
+  /* change the cursor */
+  cursor: pointer;
+}
+
+/* position the prev button on the left side */
+.prev {
+  left: 2%;
+}
+
+/* position the next button on the right side */
+.next {
+  right: 2%;
+}
+

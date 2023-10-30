@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 
+    Author: Xiangyu Ma
+    Last day of modification: 2023-4-9
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XiangyuMa_Travel</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="../css/All_base.css">
+    <link rel="stylesheet" href="../css/All_common.css">
+    <link rel="stylesheet" href="../css/Travel.css">
+    <!-- external js -->
+    <!-- jQuery need to be imported before my own JS files -->
+    <script type="text/javascript" src="../js/jQuery.js"></script>
+    <script src="../js/navHide.js"></script>
+    <script src="../js/modeSwitch.js"></script>
+    <script src="../js/youTube.js"></script>
+    <script src="../js/covidinfo.js"></script>
+</head>
+
+<body>
+    <!-- This part showing locations I have been to-->
+    <div class="left">
+        <h1>Traveled</h1>
+        <div class="traveled">
+            <ul>
+                <li><a href="Travel_Shanghai.html">1.Shanghai</a></li>
+                <li><a href="Travel_Beijing.html">2.Beijing</a></li>
+                <li>3.Chengdu</li>
+                <li>4.Chongqing</li>
+                <li>5.Hangzhou</li>
+                <li>6.Shenyang</li>
+                <li>7.Wenzhou</li>
+                <li>8.Daqing</li>
+                <li>9.Jilin</li>
+                <li>10.Harbin</li>
+                <li>11.Toronto</li>
+                <li>12.Coldlake</li>
+                <li>13.Edmonton</li>
+                <li>14.Calgary</li>
+                <li>15.Yellowknife</li>
+                <li>16.Victoria</li>
+                <li>17.Vancouver</li>
+            </ul>
+        </div>
+
+        <h1>Future</h1>
+        <div class="plan">
+            <ul>
+                <li><a href="Travel_Japan.html">1.Japan</a></li>
+                <li>2.Tibet</li>
+                <li>3.YellowStone</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="midMap">
+        <img src="../Pic/Gallery/map.jpg" alt="Sorry, something wrong with this picture.">
+        <span>Source of the world map: https://www.freeworldmaps.net/download/map.html.</span>
+    </div>
+
+    <!-- Right side: four button to other website -->
+    <button id="modeSwitch">Switch Theme</button>
+    <div class="navButton">
+        Nav
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="../index.html" title="HomePage"><span>Home Page</span></a></li>
+            <li><a href="Gallery.html" title="Gallery"><span>Gallery</span></a></li>
+            <li><a href="Contact.html" target="_blank"><span>Contact Me</span></a></li>
+        </ul>
+    </div>
+
+    <div class="AJAX">
+        <!-- This div is for youTube video -->
+        <div class="video-container">
+        </div>
+
+        <!-- This div is for covid data -->
+        <div class="covid-data">
+            <h2>COVID-19 Data in US</h2>
+            <p>Positive: <span id="positive-cases"></span></p>
+            <p>Negative: <span id="negative-cases"></span></p>
+        </div>
+    </div>
+</body>
+
+</html>

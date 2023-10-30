@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!-- 
+    Author: Xiangyu Ma
+    Last day of modification: 2023-3-23
+ -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XiangyuMa_HomePage</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="./css/All_base.css">
+    <link rel="stylesheet" href="./css/All_common.css">
+    <link rel="stylesheet" href="./css/Index.css">
+    <!-- external js -->
+    <!-- jQuery need to be imported before my own JS files -->
+    <script type="text/javascript" src="./js/jQuery.js"></script>
+    <script src="./js/navHide.js"></script>
+    <script src="./js/imageCarousel.js"></script>
+    <script src="./js/modeSwitch.js"></script>
+</head>
+
+<body>
+    <!-- Left side: main picture -->
+    <div class="left">
+        <!--
+            Old code 
+            <img src="./Pic/other/xma2.jpg" alt="Sorry, something wrong with the image" title="My picutre"
+            class="leftPicImg"> 
+        -->
+        <div class="image-carousel">
+            <img src="./Pic/other/xma.jpg" alt="Image 1">
+            <img src="./Pic/other/xma2.jpg" alt="Image 1">
+            <img src="./Pic/other/aboutme.jpg" alt="Image 1">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+        <ul>
+            <li>Xiangyu Ma</li>
+            <li>Athabasca University</li>
+            <li>age: 28</li>
+            <li>Canada</li>
+            <li>Edmonton</li>
+            <li><img src="./Pic/other/xmins.jpg" alt="Sorry, something wrong with the image" title="My ins"
+                    class="myins"></li>
+        </ul>
+    </div>
+
+
+    <div class="midContent">
+        <h1>Welcome! Bonjour!</h1>
+        <ul>
+            <li>
+                This is my personal website. The main purpose of this website is a demonstration of
+                my personal experience, my travel experience and plan, my second-hand stuff listing and my gaming team
+                up.
+            </li>
+            <li>
+                On the right of this page is the main navigation bar. Clicking on them should be able to navigate to the
+                according page.
+            </li>
+            <li>
+                The left side of this page should be a main picture.
+            </li>
+            <li>
+                To use this website, simply click on the section on the right side.
+            </li>
+
+            <!-- I just fill more meaningless text down here -->
+            <!-- <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li>
+            <li>for test</li> -->
+        </ul>
+    </div>
+
+    <!-- Right side: four button to other website -->
+    <div class="right">
+        <button id="modeSwitch">Switch Theme</button>
+        <div class="navButton">
+            Nav
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="./html/AboutMe.html" title="About Me"><span>About Me</span></a></li>
+                <li><a href="./html/Travel.html" title="Travel"><span>Travel</span></a></li>
+                <li><a href="./html/BuySell.html" title="Buy&Sell"><span>Buy&Sell</span></a></li>
+                <li><a href="./html/Gaming.html" title="Gaming"><span>Gaming</span></a></li>
+                <li><a href="./html/Contact.html" target="_blank"><span>Contact Me</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- js for navigation button -->
+    <!-- <script>
+        // get tag <div class="navButton"> and store it
+        var navButton = document.querySelector('.navButton');
+        
+        // create a flag variable default value 0
+        // this variable is used to check the status of navigation
+        var flag = 0;
+
+        // adding onclick funtion to this div tag
+        navButton.addEventListener('click', function () {
+            // select the <div class="nav"> tag which is navigation list
+            var navList = document.querySelector('.nav');
+
+            // if flag is 0, it means nav is hidden
+            if (flag == 0) {
+                // change the display attribute from 'none' to 'block'
+                // this way, the navigation will show up
+                navList.style.display = 'block';
+                //change flag to 1, showing nav is displayed
+                flag = 1;
+            } else {
+                // vise versa
+                navList.style.display = 'none';
+                flag = 0;
+            }
+        })
+    </script> -->
+
+</html>

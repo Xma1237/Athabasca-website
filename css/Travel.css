@@ -1,0 +1,80 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-4-9
+CCS file for Travel.html
+*/
+
+/* I tried to add other things to make this page 
+    look better and come up with using a same background 
+    color as my map's background color. This way,
+    the whole page seems to be one whole map. */
+body {
+    /* overwrite background color */
+    background-color: rgb(227, 221, 220);
+}
+.left {
+    /* put the whole div to the left side */
+    position: fixed !important;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(56, 55, 55);
+    color: white;
+    /* Need this 'overflow' to arrange future more places */
+    overflow: auto;
+}
+
+/* use of nth-child selector to change color of specific word color in <a> tag */
+.traveled ul:nth-child(1) a,
+.traveled ul:nth-child(2) a,
+.plan ul:first-child a
+{
+    color: red;
+}
+
+.left h1 {
+    /* same with with sidebar */
+    width: 100%;
+}
+
+.midMap {
+    width: 70%;
+    /* this margin-left will let the map stay beside the left bar */
+    margin-left: 200px;
+}
+
+.midMap span {
+    /* Put the citation to the right, and make font size smaller */
+    float: right;
+    font-size: 10px;
+}
+
+.midMap img {
+    /* make the image has same with with div '.midMap' */
+    width: 100%;
+}
+
+
+/* CSS below are for the video */
+.video-container {
+  position: fixed;
+  right: 0;
+  top: 70%;
+  height: 30%;
+  width: 15%;
+  background-color: rgb(227, 221, 220);
+}
+
+.video-container img {
+    height: 100%;
+    width: 100%;
+}
+
+/* CSS for covid-data */
+.covid-data {
+    position: fixed;
+    right: 15%;
+    top: 70%;
+    width: 15%;
+    height: 30%;
+    background-color: #b04444;
+}

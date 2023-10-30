@@ -1,0 +1,31 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+CCS file for Contact.html
+*/
+
+/* font size to 20px */
+.contact,
+.contact2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+
+/* put everything in the middle */
+.midContent {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* some extra space from input label */
+.contact2 input {
+    margin-left: 10px;
+}
+
+/* change the type of cursor when use select the input button*/
+.midContent input:hover {
+    cursor: pointer;
+}

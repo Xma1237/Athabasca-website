@@ -1,0 +1,26 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+CCS file for Gallery.html
+*/
+
+/* style for the main pic area */
+#gallery {
+    /* 80% will let this div take 80% of body width */
+    width: 80%; 
+    /* shift the whole div to right */
+    margin-left: 40px;
+}
+
+#gallery h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#gallery img{
+    width: 300px;
+    /* separate each img */
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+

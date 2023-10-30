@@ -1,0 +1,55 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-10
+CCS file for Gaming.html
+*/
+
+.games table {
+    /* margin between each game */
+    margin: 100px 0 10px 100px;
+    width: 70%;
+}
+
+table,
+td {
+    /* make a border */
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.games table:first-child {
+    /* this margin top will move the whole table down for 20px */
+    margin-top: 20px;
+    /* This line height is used to make the whole row higher */
+    line-height: 70px;
+}
+
+.games img {
+    /* set the size of images */
+    width: 300px;
+    height: 300px;
+    /* margin-right is giving space to the words in right side */
+    margin-right: 3%;
+}
+
+/* this is not in HTML, this calendar tag is created through JS */
+.calendar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(150, 218, 230);
+    /* z-index is less than nav bar */
+    z-index: 1;
+}
+
+/* these two below is about the position of pre/next button of calendar */
+.previous {
+    position: relative;
+    left: 0;
+}
+
+.next {
+    position: relative;
+    left: 58%;
+}

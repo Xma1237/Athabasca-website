@@ -1,0 +1,76 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+base css format for all pages
+*/
+
+/* clear default margin&padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* same font size, line height, etc */
+body {
+    font: 20px/1.5 "Arial", "Microsoft Yahei", sans-serif;
+    color: #333;
+    background-color: rgb(205, 211, 216);
+}
+
+/* delete default list style */
+ul,
+ol {
+    list-style: none;
+}
+
+/* delete default font Italic  */
+em,
+i {
+    font-style: normal;
+}
+
+/* delete default underscore, set default font color */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* set default img position to vertical-align at middle, delete default gap  */
+img {
+    vertical-align: middle;
+}
+
+/* delete default input style */
+input {
+    border: none;
+    outline: none;
+    color: black;
+}
+
+/* fix the side effects of float */
+.clearfix::before ,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* change box model to border-box */
+* {
+    box-sizing: border-box;
+}

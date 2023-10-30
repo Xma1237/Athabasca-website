@@ -1,0 +1,20 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+CCS file for Resume.html
+*/
+
+/* 
+    This page is relative simple.
+    Only one resume image in middle.
+ */
+a {
+    /* space from left side of window */
+    margin-left: 15%;
+}
+
+img {
+    /* navigation bar is around 15% width 
+        so around 70% image width is good. */
+    width: 70%;
+}

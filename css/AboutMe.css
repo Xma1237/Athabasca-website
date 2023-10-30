@@ -1,0 +1,57 @@
+/* 
+Author: Xiangyu Ma
+Last day of modification: 2023-3-6 
+CSS file for AboutMe.html
+*/
+
+/* Left part of AboutMe */
+/* Only one image here */
+/* similar with homepage */
+.left {
+    width: 25%;
+    height: 100%;
+    /* fixed position will keep the image stay when user scroll down */
+    position: fixed;
+    background-color: rgb(56, 55, 55);
+}
+
+.left .leftPicImg {
+    width: 100%;
+    /* this will change the corner of image to round corner */
+    border-radius: 10%;
+}
+
+/* middle part, main content */
+/* This part is also similar with homepage */
+.midContent {
+    position: relative;
+    left: 25%;
+    vertical-align: top;
+    display: inline-block;
+    width: 51%;
+    font-size: 20px;
+    margin-left: 2%;
+    text-align: left;
+}
+
+.midContent h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.midContent .profile {
+    margin-bottom: 30px;
+}
+
+.midContent .experience {
+    margin-bottom: 30px;
+}
+
+.midContent .abilities {
+    margin-bottom: 30px;
+}
+
+.btn {
+    position: relative;
+    left: 50%;
+}
